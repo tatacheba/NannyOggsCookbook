@@ -24,7 +24,6 @@
 			{#each recipe.ingredients as ingredient}
 				<li>
 					<b>{ingredient.quantity} {ingredient.unit ? ingredient.unit : ''}</b>
-					<!-- {truncateText(ingredient.name)} -->
 					{ingredient.optional ? '(optional)' : ''}
 				</li>
 			{/each}
