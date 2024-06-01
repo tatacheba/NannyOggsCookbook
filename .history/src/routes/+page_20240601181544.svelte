@@ -12,7 +12,8 @@
 		ingredients: recipe.ingredients.map((ingredient) => ({
 			name: ingredient.name,
 			quantity: ingredient.quantity,
-			unit: ingredient.unit
+			unit: ingredient.unit,
+			optional: ingredient.optional
 		})),
 		instructions: recipe.instructions,
 		notes: recipe.notes

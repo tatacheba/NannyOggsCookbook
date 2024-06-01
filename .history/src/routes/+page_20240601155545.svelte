@@ -8,14 +8,7 @@
 	let recipes = recipesData.recipes.map((recipe, index) => ({
 		id: index,
 		title: recipe.title,
-		servings: recipe.servings,
-		ingredients: recipe.ingredients.map((ingredient) => ({
-			name: ingredient.name,
-			quantity: ingredient.quantity,
-			unit: ingredient.unit
-		})),
-		instructions: recipe.instructions,
-		notes: recipe.notes
+		ingredients: recipe.ingredients.map((ingredient) => ingredient.name)
 	}));
 </script>
 
