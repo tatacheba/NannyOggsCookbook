@@ -1,0 +1,457 @@
+{
+  "recipes": [
+    {
+      "title": "Deep-Sea Blowfish",
+      "servings": "2 as a starter",
+      "src": "",
+      "ingredients": [
+        {
+          "name": "deep-sea blowfish",
+          "src": "",
+          "quantity": "1"
+        },
+        {
+          "name": "sea bream or other white fish, absolutely fresh, filleted",
+          "src": "",
+          "quantity": "50",
+          "unit": "g"
+        },
+        {
+          "name": "radishes",
+          "src": "",
+          "quantity": "3-4"
+        },
+        {
+          "name": "spring onions",
+          "src": "",
+          "quantity": "2-3"
+        },
+        {
+          "name": "watercress",
+          "src": "",
+          "quantity": "a few sprigs"
+        },
+        {
+          "name": "light soy sauce",
+          "src": "",
+          "quantity": "an eggcup full"
+        },
+        {
+          "name": "mustard",
+          "src": "",
+          "quantity": "1",
+          "unit": "teaspoon",
+          "optional": true
+        },
+        {
+          "name": "lemon juice",
+          "src": "",
+          "quantity": "2",
+          "unit": "teaspoons",
+          "optional": true
+        },
+        {
+          "name": "garlic, crushed",
+          "src": "",
+          "quantity": "1",
+          "unit": "clove",
+          "optional": true
+        }
+      ],
+      "instructions": [
+        "THE MOST IMPORTANT thing here is not to use any of the blowfish whatsoever, since every single part of it is deadly in a very unpleasant way. After covering all work surfaces, dispose of the blowfish very carefully. Better yet, get someone else to dispose of the blowfish, preferably someone you don't like very much but who doesn't owe you any money. An incinerator would be an ideal place, provided the smoke is blowing in the direction of unnecessary people.",
+        "Check the fish for any scales or bones and remove any you find. Place in a colander and quickly pour boiling water over it, then immediately plunge the fish into a bowl of cold water; the object is not to cook it but to make sure it is clean.",
+        "Finely slice the radishes and spring onion (lengthways) and arrange into pretty patterns on two plates, along with the watercress.",
+        "Using a very sharp knife, carefully slice the fish as thinly as possible.",
+        "Serve immediately, with the soy dip."
+      ],
+      "notes": [
+        "You might ask why bother to obtain a deep-sea blowfish at all? If you do not, the dish will still be very pleasant but will not have that delicate frisson which lifts the dish to gastronomic heaven.",
+        "Connoisseurs claim they can tell by the taste if a blowfish has been anywhere near the kitchen on the day of preparation.",
+        "Some wizards reckon that the blowfish business is a bit like that idea that water remembers what’s been in it.",
+        "People know the dish is a genuine blowfish dish when they’ve been charged $100 for it."
+      ]
+    },
+    {
+      "title": "Bananana Soup Surprise",
+      "src": "",
+      "servings": "4",
+      "ingredients": [
+        {
+          "name": "large bananas",
+          "src": "",
+          "quantity": "4",
+          "preparation": "peeled"
+        },
+        {
+          "name": "vegetable stock",
+          "src": "",
+          "quantity": "470",
+          "unit": "ml"
+        },
+        {
+          "name": "dry sherry",
+          "src": "",
+          "quantity": "155",
+          "unit": "ml"
+        },
+        {
+          "name": "ground nutmeg",
+          "src": "",
+          "quantity": "1",
+          "unit": "heaped teaspoon"
+        },
+        {
+          "name": "brown sugar",
+          "src": "",
+          "quantity": "1",
+          "unit": "heaped teaspoon"
+        },
+        {
+          "name": "chopped chervil",
+          "src": "",
+          "quantity": "2",
+          "unit": "heaped teaspoons"
+        },
+        {
+          "name": "salt",
+          "src": "",
+          "quantity": "pinch"
+        },
+        {
+          "name": "pepper",
+          "src": "",
+          "quantity": "pinch"
+        },
+        {
+          "name": "lemon juice",
+          "src": "",
+          "quantity": "1",
+          "unit": "teaspoon"
+        }
+      ],
+      "instructions": [
+        "CHOP TWO OF the bananas and put into a pan with the stock. Blend or mash until the bananas are smooth and well blended.",
+        "Slowly bring the liquid to simmering point, taking care not to let it boil, and add the remaining ingredients.",
+        "Stir gently for 2–3 minutes to ensure that all the sugar has dissolved and leave to simmer for a further 5 minutes, stirring frequently.",
+        "Take the remaining two bananas and chop them in half width-ways. Place each half in a bowl, pointing upwards.",
+        "Pour in some soup and serve. Surprising, eh?"
+      ],
+      "notes": [
+        "Some special ingredients have been left out from the original recipe as they made the soup a bit too surprising."
+      ]
+    },
+    {
+      "title": "Celery Astonishment",
+      "src": "",
+      "servings": "2",
+      "ingredients": [
+        {
+          "name": "large head of celery",
+          "src": "",
+          "quantity": "1"
+        },
+        {
+          "name": "cooked rice",
+          "src": "",
+          "quantity": "300",
+          "unit": "g"
+        },
+        {
+          "name": "green pepper, seeded and chopped",
+          "src": "",
+          "quantity": "1"
+        },
+        {
+          "name": "tomatoes, chopped",
+          "src": "",
+          "quantity": "3"
+        },
+        {
+          "name": "grated Parmesan cheese",
+          "src": "",
+          "quantity": "60",
+          "unit": "g"
+        },
+        {
+          "name": "lemon juice",
+          "src": "",
+          "quantity": "1",
+          "unit": "teaspoon"
+        },
+        {
+          "name": "chopped tarragon",
+          "src": "",
+          "quantity": "1",
+          "unit": "tablespoon"
+        },
+        {
+          "name": "egg, beaten",
+          "src": "",
+          "quantity": "1"
+        },
+        {
+          "name": "salt",
+          "src": "",
+          "quantity": "to taste"
+        },
+        {
+          "name": "pepper",
+          "src": "",
+          "quantity": "to taste"
+        }
+      ],
+      "instructions": [
+        "PREHEAT THE OVEN to 200°C/Gas 6.",
+        "Prepare the celery by carefully removing the inner stalks, any leaves, mud, etc., to form a hollow.",
+        "Mix together all the remaining ingredients except the egg, and check seasoning. Bind together with the egg.",
+        "Take a large piece of lightly oiled cooking foil and place it on a baking tray. Place the celery on the foil and stuff it with the mixture. Tie with string around the loose ends to prevent the stuffing falling out, wrap in the foil, and bake in the oven for 1¼–2 hours until celery is tender.",
+        "To serve, carefully unwrap and place on an oval serving platter with two judiciously placed baked potatoes, mayhap. Carve at the table."
+      ],
+      "notes": [
+        "The recipe originally included aubergine, but it was removed because it caused some amusement."
+      ]
+    },
+    {
+      "title": "Primal Soup",
+      "servings": "4 as a main course or 6 as a starter",
+      "src": "",
+      "ingredients": [
+        {
+          "name": "fish stock",
+          "src": "",
+          "quantity": "470",
+          "unit": "ml"
+        },
+        {
+          "name": "salmon, filleted and skinned",
+          "src": "",
+          "quantity": "50",
+          "unit": "g"
+        },
+        {
+          "name": "cod, filleted and skinned",
+          "src": "",
+          "quantity": "50",
+          "unit": "g"
+        },
+        {
+          "name": "mussels, shelled and cleaned",
+          "src": "",
+          "quantity": "12"
+        },
+        {
+          "name": "crab meat (prepared) or crab sticks, roughly shredded",
+          "src": "",
+          "quantity": "50",
+          "unit": "g"
+        },
+        {
+          "name": "baby octopus tentacles, cleaned",
+          "src": "",
+          "quantity": "6-10"
+        },
+        {
+          "name": "tin chopped tomatoes",
+          "src": "",
+          "quantity": "230",
+          "unit": "g"
+        },
+        {
+          "name": "dry white wine",
+          "src": "",
+          "quantity": "150",
+          "unit": "ml"
+        },
+        {
+          "name": "garlic, crushed",
+          "src": "",
+          "quantity": "2-3",
+          "unit": "cloves"
+        },
+        {
+          "name": "parsley, roughly chopped",
+          "src": "",
+          "quantity": "1",
+          "unit": "tablespoon"
+        },
+        {
+          "name": "dill, chopped",
+          "src": "",
+          "quantity": "1",
+          "unit": "tablespoon"
+        },
+        {
+          "name": "paprika",
+          "src": "",
+          "quantity": "1",
+          "unit": "teaspoon"
+        },
+        {
+          "name": "vermicelli nests",
+          "src": "",
+          "quantity": "2",
+          "unit": "nests (approx. 25g each)"
+        },
+        {
+          "name": "shrimps, shelled and cooked",
+          "src": "",
+          "quantity": "100",
+          "unit": "g"
+        },
+        {
+          "name": "gravy browning/green food dye (optional)",
+          "src": "",
+          "quantity": "a few drops"
+        },
+        {
+          "name": "egg, beaten",
+          "src": "",
+          "quantity": "1"
+        },
+        {
+          "name": "salt",
+          "src": "",
+          "quantity": "to taste"
+        },
+        {
+          "name": "pepper",
+          "src": "",
+          "quantity": "to taste"
+        }
+      ],
+      "instructions": [
+        "HEAT THE FISH stock in a large pan. Roughly chop the salmon and cod and drop into the stock.",
+        "Simmer on a gentle heat until the fish is nearly cooked. Then remove from the heat and stir until the fish chunks separate and break down. Return to the heat and add the mussels, crab meat and tentacles. Bring to a simmer. Add the tomatoes and wine and return to a low heat. Add the herbs, garlic and seasonings, the vermicelli and shrimps, and simmer until the pasta cooks. Add browning/food dye if required, and check seasoning. Finally, add the egg and gently stir until cooked. Then quickly bring the mixture to the boil for a few seconds and serve."
+      ],
+      "notes": [
+        "A popular dish at Unseen University and, it is rumoured, among the gods themselves. It is said to be the soup from which all life evolved, and if you leave this one long enough life will definitely evolve in it."
+      ]
+    },
+    {
+      "title": "Mrs Colon’s Genyooin Klatchian Curry",
+      "servings": "4",
+      "src": "",
+      "ingredients": [
+        {
+          "name": "sunflower oil",
+          "src": "",
+          "quantity": "2",
+          "unit": "tablespoons"
+        },
+        {
+          "name": "large onion, roughly chopped",
+          "src": "",
+          "quantity": "1"
+        },
+        {
+          "name": "garlic, chopped",
+          "src": "",
+          "quantity": "2",
+          "unit": "cloves"
+        },
+        {
+          "name": "peas (frozen will be fine)",
+          "src": "",
+          "quantity": "225",
+          "unit": "g"
+        },
+        {
+          "name": "red pepper, seeded and chopped",
+          "src": "",
+          "quantity": "1"
+        },
+        {
+          "name": "green pepper, seeded and chopped",
+          "src": "",
+          "quantity": "1"
+        },
+        {
+          "name": "curry powder (optional, for old time’s sake)",
+          "src": "",
+          "quantity": "1",
+          "unit": "teaspoon"
+        },
+        {
+          "name": "ground turmeric",
+          "src": "",
+          "quantity": "½",
+          "unit": "teaspoon"
+        },
+        {
+          "name": "coconut milk",
+          "src": "",
+          "quantity": "175",
+          "unit": "ml"
+        },
+        {
+          "name": "swede, chopped and boiled until just tender",
+          "src": "",
+          "quantity": "350",
+          "unit": "g"
+        },
+        {
+          "name": "broccoli florets",
+          "src": "",
+          "quantity": "225",
+          "unit": "g"
+        },
+        {
+          "name": "raisins or sultanas",
+          "src": "",
+          "quantity": "50",
+          "unit": "g"
+        },
+        {
+          "name": "ground ginger",
+          "src": "",
+          "quantity": "1",
+          "unit": "teaspoon"
+        },
+        {
+          "name": "ground cumin",
+          "src": "",
+          "quantity": "1",
+          "unit": "teaspoon"
+        },
+        {
+          "name": "ground coriander",
+          "src": "",
+          "quantity": "1",
+          "unit": "teaspoon"
+        },
+        {
+          "name": "vegetable stock",
+          "src": "",
+          "quantity": "250",
+          "unit": "ml"
+        },
+        {
+          "name": "tomato purée to thicken, if needed",
+          "src": "",
+          "quantity": "as needed"
+        },
+        {
+          "name": "brown mustard seeds",
+          "src": "",
+          "quantity": "2",
+          "unit": "teaspoons"
+        },
+        {
+          "name": "salt",
+          "src": "",
+          "quantity": "to taste"
+        },
+        {
+          "name": "black pepper",
+          "src": "",
+          "quantity": "to taste"
+        }
+      ],
+      "instructions": [
+        "PREHEAT THE OVEN to 180°C/Gas 4. Heat the oil in a large frying pan. Add the onion, garlic, broccoli, peppers and cook until the onion starts to soften. Then add the part-cooked swede, the peas and raisins and cook gently for a further 5 minutes. Add the spices (but not the mustard seeds), the coconut milk and about half the vegetable stock. Cook for a further 10 minutes or so, adding extra stock if the mixture needs it. If it seems too runny, add a little tomato purée to thicken.",
+        "Transfer the mixture to a casserole dish, season, sprinkle with the mustard seeds, cover and cook in the oven for about 45 minutes. Serve with rice or nan bread. Run away."
+      ],
+      "notes": [
+        "A note from the editors: Few recipes in these pages have caused so much debate as this one. Anyone over the age of forty knows how the classic recipe goes, because it has been invented and reinvented thousands of times by ladies who have heard about foreign parts but have no wish to bite into them.",
+        "Its mere existence is a telling"]]

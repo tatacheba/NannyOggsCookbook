@@ -1,0 +1,38 @@
+{
+
+    "name": "nannyoggscookbook",
+
+    "version": "1.0.0",
+
+    "main": "main.js",
+
+    "devDependencies": {
+
+        "concurrently": "^8.2.2"
+
+    },
+
+    "dependencies": {
+
+        "express": "^4.19.2"
+
+    },
+
+    "scripts": {
+
+        "start": "concurrently \"npm run server\" \"npm run electron\"",
+
+        "server": "node app.js"
+
+    },
+
+    "keywords": [],
+
+    "author": "TataCheba",
+
+    "license": "ISC",
+
+    "description": ""
+
+}
+
