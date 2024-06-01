@@ -29,13 +29,13 @@
 		<h2>Instructions</h2>
 		<ol>
 			{#each recipe.instructions as instruction}
-				<li>{truncateText(instruction, 300)}</li>
+				<li>{truncateText(instruction, 150)}</li>
 			{/each}
 		</ol>
 		<h3>Notes</h3>
 		<ul>
 			{#each recipe.notes as note}
-				<li>{truncateText(note, 300)}</li>
+				<li>{truncateText(note, 150)}</li>
 			{/each}
 		</ul>
 	</div>

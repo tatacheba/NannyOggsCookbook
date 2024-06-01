@@ -2,7 +2,9 @@
 	export let recipe;
 
 	function truncateText(text, maxLength = 370) {
-		if (text.length <= maxLength) {
+		console.log(text);
+		if (text.length > maxLength) {
+			console.log(text);
 			return text;
 		}
 		return text.substring(0, maxLength) + '...';
@@ -29,13 +31,13 @@
 		<h2>Instructions</h2>
 		<ol>
 			{#each recipe.instructions as instruction}
-				<li>{truncateText(instruction, 300)}</li>
+				<li>{truncateText(instruction, 10)} {instruction}</li>
 			{/each}
 		</ol>
 		<h3>Notes</h3>
 		<ul>
 			{#each recipe.notes as note}
-				<li>{truncateText(note, 300)}</li>
+				<li>{truncateText(note, 10)} {note}</li>
 			{/each}
 		</ul>
 	</div>

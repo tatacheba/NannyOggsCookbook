@@ -1,15 +1,14 @@
-<script lang="ts">
+<script>
 	export let recipe;
-
 	function truncateText(text, maxLength = 370) {
-		if (text.length <= maxLength) {
-			return text;
+		if (text.length > maxLength) {
+			return text.substring(0, maxLength) + '...';
 		}
-		return text.substring(0, maxLength) + '...';
+		return text;
 	}
 </script>
 
-<div class="book">
+{#if recipe}
 	<div class="left-page">
 		<h2>{recipe.title}</h2>
 		<p>(Servings: {recipe.servings})</p>
@@ -29,14 +28,14 @@
 		<h2>Instructions</h2>
 		<ol>
 			{#each recipe.instructions as instruction}
-				<li>{truncateText(instruction, 300)}</li>
+				<li>{truncateText(instruction)}</li>
 			{/each}
 		</ol>
 		<h3>Notes</h3>
 		<ul>
 			{#each recipe.notes as note}
-				<li>{truncateText(note, 300)}</li>
+				<li>{truncateText(note)}</li>
 			{/each}
 		</ul>
 	</div>
-</div>
+{/if}
