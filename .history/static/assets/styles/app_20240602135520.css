@@ -36,6 +36,20 @@ h1 {
 	color: #8b4513;
 }
 
+.book_header {
+	position: absolute;
+	top: 10px; /* Расположить заголовок сверху */
+	left: 10vw;
+	transform: translateX(-50%); /* Центрируем заголовок горизонтально */
+	z-index: 10; /* Поверх книги */
+	background: rgba(255, 255, 255, 0.8); /* Фон для читаемости текста */
+	padding: 10px 20px; /* Отступы */
+	border-radius: 10px; /* Скругленные углы */
+}
+.book_header h2::before:hover {
+	height: 3px;
+	width: 3px;
+}
 h2,
 h3 {
 	line-height: 1;
@@ -58,26 +72,6 @@ p {
 	margin: 0;
 	text-align: start;
 	white-space: pre-wrap;
-}
-
-.book-header {
-	position: absolute;
-	top: 10px; /* Расположить заголовок сверху */
-	left: 10px;
-	/* transform: translateX(-50%); Центрируем заголовок горизонтально */
-	z-index: 10; /* Поверх книги */
-	/* background: rgba(255, 255, 255, 0.8); Фон для читаемости текста */
-	padding: 10px 20px; /* Отступы */
-	border-radius: 10px; /* Скругленные углы */
-}
-.book-header h2 {
-	cursor: pointer;
-	position: relative;
-	padding-left: 25px;
-}
-
-.book-header h2:hover {
-	color: #8b4513;
 }
 
 .book {

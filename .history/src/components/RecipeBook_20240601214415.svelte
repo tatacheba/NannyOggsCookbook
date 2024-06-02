@@ -1,5 +1,5 @@
 <!-- RecipeBook.svelte -->
-<script lang="ts">
+<script>
 	import RecipeCard from './RecipeCard.svelte';
 
 	export let recipes;
@@ -20,6 +20,5 @@
 </script>
 
 <button class="button-left" on:click={previousRecipe}></button>
-<!-- Передаем текущий рецепт в компонент RecipeCard -->
-<RecipeCard recipe={currentRecipe} />
+<RecipeCard recipe={recipes[currentIndex]} />
 <button class="button-right" on:click={nextRecipe}></button>

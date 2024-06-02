@@ -8,6 +8,7 @@
 		}
 		return text.substring(0, maxLength) + '...';
 	}
+	console.log(recipe);
 </script>
 
 {#if recipe}

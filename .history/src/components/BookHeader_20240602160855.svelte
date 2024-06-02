@@ -1,4 +1,3 @@
-<!-- BookHeader.svelte -->
 <script lang="ts">
 	export let recipes;
 	export let selectRecipe;

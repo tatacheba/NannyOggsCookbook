@@ -1,4 +1,3 @@
-<!-- RecipeCard.svelte -->
 <script lang="ts">
 	export let recipe;
 
@@ -8,6 +7,7 @@
 		}
 		return text.substring(0, maxLength) + '...';
 	}
+	console.log(props);
 </script>
 
 {#if recipe}

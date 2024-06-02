@@ -60,27 +60,41 @@ p {
 	white-space: pre-wrap;
 }
 
-.book-header {
+.book_header {
 	position: absolute;
+	border: 10px solid red;
 	top: 10px; /* Расположить заголовок сверху */
 	left: 10px;
-	/* transform: translateX(-50%); Центрируем заголовок горизонтально */
+	transform: translateX(-50%); /* Центрируем заголовок горизонтально */
 	z-index: 10; /* Поверх книги */
-	/* background: rgba(255, 255, 255, 0.8); Фон для читаемости текста */
+	background: rgba(255, 255, 255, 0.8); /* Фон для читаемости текста */
 	padding: 10px 20px; /* Отступы */
 	border-radius: 10px; /* Скругленные углы */
 }
 .book-header h2 {
 	cursor: pointer;
+	border: 1px solid #220f02;
 	position: relative;
 	padding-left: 25px;
 }
 
-.book-header h2:hover {
-	color: #8b4513;
+.book_header h2::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 15px;
+	height: 15px;
+	background-color: transparent;
+	border-radius: 50%;
+	transition: background-color 0.3s;
 }
 
-.book {
+.book_header h2:hover::before {
+	background-color: red;
+}
+*/ .book {
 	background: url('../book.png') no-repeat center center;
 	background-size: cover; /* Сохраняет пропорции изображения */
 	width: 1024px;

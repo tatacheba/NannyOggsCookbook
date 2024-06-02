@@ -1,4 +1,3 @@
-<!-- RecipeCard.svelte -->
 <script lang="ts">
 	export let recipe;
 

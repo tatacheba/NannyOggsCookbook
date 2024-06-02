@@ -24,6 +24,7 @@
 	// Функция для выбора рецепта
 	function selectRecipe(recipe) {
 		currentRecipe = recipe;
+		console.log(recipe);
 	}
 </script>
 

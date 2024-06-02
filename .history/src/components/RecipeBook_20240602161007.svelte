@@ -1,4 +1,3 @@
-<!-- RecipeBook.svelte -->
 <script lang="ts">
 	import RecipeCard from './RecipeCard.svelte';
 
