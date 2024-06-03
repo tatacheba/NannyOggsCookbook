@@ -22,5 +22,7 @@
 	}
 </script>
 
-<BookHeader {recipes} {selectRecipe} {currentRecipe} />
-<RecipeBook {recipes} {currentRecipe} {selectRecipe} />
+<div class="background-image">
+	<BookHeader {recipes} {selectRecipe} {currentRecipe} />
+	<RecipeBook {recipes} {currentRecipe} {selectRecipe} />
+</div>

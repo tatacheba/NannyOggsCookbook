@@ -50,7 +50,7 @@
 		top: 50%;
 		width: 10px;
 		height: 10px;
-		background: #8b4513;
+		background: red;
 		border-radius: 50%;
 		transform: translateY(-50%);
 		opacity: 0; /* Начальное состояние невидимым */
