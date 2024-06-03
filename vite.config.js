@@ -1,6 +1,10 @@
-import { sveltekit } from '@sveltejs/kit/vite';
+// vite.config.js
 import { defineConfig } from 'vite';
+import vitePlugin from 'vite-plugin-feature';
 
 export default defineConfig({
-	plugins: [sveltekit()]
+	plugins: [vitePlugin()],
+	build: {
+		outDir: 'dist'
+	}
 });
