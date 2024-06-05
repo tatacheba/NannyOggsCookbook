@@ -1,17 +1,17 @@
 // types/recipes.ts
 export interface Ingredient {
     name: string;
-    quantity: string | number;
-    unit?: string | null | undefined;
+    quantity: string;
+    unit?: string;
 }
 
 export interface Recipe {
     id: number;
     title: string;
-    servings: number | string;
+    servings: string;
     ingredients: Ingredient[];
     instructions: string;
-    notes: string | string[];
+    notes: string;
 }
 
 export interface RecipeBookProps {

@@ -15,7 +15,7 @@
 }
 
 body {
-    background: url("../background.jpg") no-repeat center center fixed;
+    background: url("./assets/background.jpg") no-repeat center center fixed;
     background-size: cover; /* Сохраняет пропорции изображения */
     font-family: "Mynerve", fantasy;
     color: #0c0500;
@@ -48,6 +48,7 @@ h2 {
     font-size: 22px;
 }
 h3 {
+    margin-top: 8px;
     font-size: 18px;
     text-align: start;
 }
@@ -65,9 +66,7 @@ p {
     position: absolute;
     top: 10px; /* Расположить заголовок сверху */
     left: 10px;
-    /* transform: translateX(-50%); Центрируем заголовок горизонтально */
     z-index: 10; /* Поверх книги */
-    /* background: rgba(255, 255, 255, 0.8); Фон для читаемости текста */
     padding: 10px 20px; /* Отступы */
     border-radius: 10px; /* Скругленные углы */
 }
@@ -82,7 +81,7 @@ p {
 }
 
 .book {
-    background: url("../book.png") no-repeat center center;
+    background: url("./assets/book.png") no-repeat center center;
     background-size: cover; /* Сохраняет пропорции изображения */
     width: 1024px;
     height: 730px;
@@ -93,10 +92,11 @@ p {
 }
 .button-left,
 .button-right {
+    position: absolute;
     top: 50%;
     height: 100px;
     width: 100px;
-    background: url("../button.png");
+    background: url("./assets/button.png");
     background-size: contain;
     border: none;
     padding: 10px 20px;
@@ -115,7 +115,11 @@ p {
     right: -100px;
     transform: rotateY(-180deg);
 }
-
+.recipe-page {
+    position: relative;
+    width: inherit;
+    height: inherit;
+}
 .left-page,
 .right-page {
     display: flex;
@@ -125,13 +129,14 @@ p {
     align-items: start;
     box-sizing: border-box;
     transition: transform 0.5s ease;
-    overflow: hidden; /* Добавлено для скрытия переполнения */
+
     white-space: pre-wrap;
     text-overflow: ellipsis; /* Добавлено для обрезки текста троеточиями */
 }
 .left-page {
-    top: 120px;
-    height: 350px;
+    /* border: 2px solid red; */
+    top: 100px;
+    height: 370px;
     width: 250px;
     left: 200px;
 }
@@ -139,7 +144,7 @@ p {
     top: 120px;
     height: 460px;
     width: 330px;
-    right: 160px;
+    right: 140px;
 }
 ul,
 ol {

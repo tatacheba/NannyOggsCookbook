@@ -161,8 +161,7 @@
                     "quantity": "to taste"
                 }
             ],
-            "instructions": 
-                "PREHEAT THE OVEN to 200°C/Gas 6. Prepare the celery by carefully removing the inner stalks, any leaves, mud, etc., to form a hollow. Mix together all the remaining ingredients except the egg, and check seasoning. Bind together with the egg. Take a large piece of lightly oiled cooking foil and place it on a baking tray. Place the celery on the foil and stuff it with the mixture. Tie with string around the loose ends to prevent the stuffing falling out, wrap in the foil, and bake in the oven for 1¼–2 hours until celery is tender. To serve, carefully unwrap and place on an oval serving platter with two judiciously placed baked potatoes, mayhap. Carve at the table."
+            "instructions": "PREHEAT THE OVEN to 200°C/Gas 6. Prepare the celery by carefully removing the inner stalks, any leaves, mud, etc., to form a hollow. Mix together all the remaining ingredients except the egg, and check seasoning. Bind together with the egg. Take a large piece of lightly oiled cooking foil and place it on a baking tray. Place the celery on the foil and stuff it with the mixture. Tie with string around the loose ends to prevent the stuffing falling out, wrap in the foil, and bake in the oven for 1¼–2 hours until celery is tender. To serve, carefully unwrap and place on an oval serving platter with two judiciously placed baked potatoes, mayhap. Carve at the table."
             ,
             "notes": "The recipe originally included aubergine, but it was removed because it caused some amusement."
         }, {
@@ -260,7 +259,7 @@
             "instructions": 
                 "HEAT THE FISH stock in a large pan. Roughly chop the salmon and cod and drop into the stock. Simmer on a gentle heat until the fish is nearly cooked. Then remove from the heat and stir until the fish chunks separate and break down. Return to the heat and add the mussels, crab meat and tentacles. Bring to a simmer. Add the tomatoes and wine and return to a low heat. Add the herbs, garlic and seasonings, the vermicelli and shrimps, and simmer until the pasta cooks. Add browning/food dye if required, and check seasoning. Finally, add the egg and gently stir until cooked. Then quickly bring the mixture to the boil for a few seconds and serve."
             ,
-            "notes": ["A popular dish at Unseen University and, it is rumoured, among the gods themselves. It is said to be the soup from which all life evolved, and if you leave this one long enough life will definitely evolve in it."]
+            "notes": "A popular dish at Unseen University and, it is rumoured, among the gods themselves. It is said to be the soup from which all life evolved, and if you leave this one long enough life will definitely evolve in it."
         }, {
                "id": "05",
             "title": "Mrs Colon's Genyooin Klatchian Curry",

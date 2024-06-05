@@ -32,24 +32,21 @@ const BookHeader: React.FC<RecipeBookProps> = ({
     };
 
     return (
-        <div>
-            <div className="book-header">
-                <h1>Nanny Ogg's Cookbook</h1>
-                {recipes.map((recipe) => (
-                    <h2
-                        key={recipe.title}
-                        onClick={() => handleSelectRecipe(recipe)}
-                        className={
-                            currentRecipe &&
-                            currentRecipe.title === recipe.title
-                                ? "selected"
-                                : ""
-                        }
-                    >
-                        {recipe.title}
-                    </h2>
-                ))}
-            </div>
+        <div className="book-header">
+            <h1>Nanny Ogg's Cookbook</h1>
+            {recipes.map((recipe) => (
+                <h2
+                    key={recipe.title}
+                    onClick={() => handleSelectRecipe(recipe)}
+                    className={
+                        currentRecipe && currentRecipe.title === recipe.title
+                            ? "selected"
+                            : ""
+                    }
+                >
+                    {recipe.title}
+                </h2>
+            ))}
         </div>
     );
 };

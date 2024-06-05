@@ -1,5 +1,7 @@
+//RecipeBook.tsx
 import React, { useState, useEffect } from "react";
 import { RecipeBookProps } from "../types/recipes";
+import RecipeCard from "./RecipeCard";
 
 const RecipeBook: React.FC<RecipeBookProps> = ({
     recipes,
@@ -37,8 +39,9 @@ const RecipeBook: React.FC<RecipeBookProps> = ({
     };
 
     return (
-        <div>
+        <div className="book">
             <button className="button-left" onClick={previousRecipe}></button>
+            <RecipeCard recipe={recipes[currentIndex]} />
             <button className="button-right" onClick={nextRecipe}></button>
         </div>
     );
