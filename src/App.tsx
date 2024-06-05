@@ -1,35 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState } from "react";
+import recipesData from "./data/recipes.json";
+import BookHeader from "./components/BookHeader";
+import RecipeBook from "./components/RecipeBook";
+import { Recipe, Ingredient } from "./types/recipes";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App: React.FC = () => {
+    const [recipes] = useState<Recipe[]>(
+        recipesData.recipes.map((recipe, index) => ({
+            id: index,
+            title: recipe.title,
+            servings: recipe.servings,
+            ingredients: recipe.ingredients.map((ingredient: Ingredient) => ({
+                name: ingredient.name,
+                quantity: ingredient.quantity,
+                unit: ingredient.unit,
+            })),
+            instructions: recipe.instructions,
+            notes: Array.isArray(recipe.notes) ? recipe.notes : [recipe.notes],
+        }))
+    );
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    const [currentRecipe, setCurrentRecipe] = useState<Recipe>(recipes[0]);
 
-export default App
+    const selectRecipe = (recipe: Recipe) => {
+        setCurrentRecipe(recipe);
+    };
+
+    return (
+        <div>
+            <BookHeader
+                recipes={recipes}
+                selectRecipe={selectRecipe}
+                currentRecipe={currentRecipe}
+            />
+            <RecipeBook
+                recipes={recipes}
+                currentRecipe={currentRecipe}
+                selectRecipe={selectRecipe}
+            />
+        </div>
+    );
+};
+
+export default App;
