@@ -15,7 +15,7 @@
 }
 
 body {
-    background: url("./assets/background.jpg") no-repeat center center fixed;
+    background: url("./images/background.jpg") no-repeat center center fixed;
     background-size: cover; /* Сохраняет пропорции изображения */
     font-family: "Mynerve", fantasy;
     color: #0c0500;
@@ -81,7 +81,7 @@ p {
 }
 
 .book {
-    background: url("./assets/book.png") no-repeat center center;
+    background: url("./images/book.png") no-repeat center center;
     background-size: cover; /* Сохраняет пропорции изображения */
     width: 1024px;
     height: 730px;
@@ -96,7 +96,7 @@ p {
     top: 50%;
     height: 100px;
     width: 100px;
-    background: url("./assets/button.png");
+    background: url("./images/button.png");
     background-size: contain;
     border: none;
     padding: 10px 20px;
