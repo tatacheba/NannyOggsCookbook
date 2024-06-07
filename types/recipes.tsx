@@ -8,10 +8,10 @@ export interface Ingredient {
 export interface Recipe {
     id: number;
     title: string;
-    servings: string;
+    servings?: string;
     ingredients: Ingredient[];
     instructions: string;
-    notes?: string | undefined;
+    notes?: string;
 }
 
 export interface RecipeBookProps {
@@ -23,22 +23,3 @@ export interface RecipeBookProps {
 export interface RecipeCardProps {
     recipe: Recipe;
 }
-// export interface RootObject {
-//     recipes: Recipes[];
-// }
-
-// export interface Recipes {
-//     id: string;
-//     title: string;
-//     servings: string;
-//     src: string;
-//     ingredients: Ingredients[];
-//     instructions: string;
-//     notes: string;
-// }
-
-// export interface Ingredients {
-//     name: string;
-//     src: string;
-//     quantity: string;
-// }

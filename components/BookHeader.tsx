@@ -14,7 +14,7 @@ const BookHeader: React.FC<RecipeBookProps> = ({
     return (
         <div>
             <div className="book-header">
-                <h1>Nanny Ogg's Cookbook</h1>
+                <h1>Nanny Ogg&apos;s Cookbook</h1>
                 {recipes.map((recipe) => (
                     <h2
                         key={recipe.title}
