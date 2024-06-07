@@ -6,7 +6,7 @@ import RecipeBook from "../components/RecipeBook";
 import {
     Recipe as RecipeType,
     Ingredient as IngredientType,
-} from "../types/recipes";
+} from "../src/types/recipes";
 
 const App: React.FC = () => {
     const [recipes, setRecipes] = useState<RecipeType[]>(
