@@ -1,8 +1,8 @@
 //App.tsx
 import React, { useEffect, useState } from "react";
 import recipesData from "../pages/api/data/recipes.json";
-import BookHeader from "../components/BookHeader";
-import RecipeBook from "../components/RecipeBook";
+import BookHeader from "./BookHeader";
+import RecipeBook from "./RecipeBook";
 import {
     Recipe as RecipeType,
     Ingredient as IngredientType,
