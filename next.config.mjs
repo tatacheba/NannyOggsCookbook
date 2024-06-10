@@ -12,6 +12,7 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
+  reactStrictMode: true,
   output: 'export',
     assetPrefix: './',
   distDir: 'out',
@@ -21,3 +22,15 @@ const nextConfig = {
 }
  
 export default nextConfig
+
+// const path = require('path');
+
+// module.exports = {
+//   images: {
+//     domains: ['yourdomain.com'],
+//   },
+//   webpack(config) {
+//     config.resolve.alias['@'] = path.resolve(__dirname);
+//     return config;
+//   },
+// };
