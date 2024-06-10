@@ -16,7 +16,7 @@ const nextConfig = {
     assetPrefix: './',
   distDir: 'out',
    images: {
-    // unoptimized: true,
+    unoptimized: true,
   },
 }
  
