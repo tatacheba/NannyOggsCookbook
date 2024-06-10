@@ -9,6 +9,11 @@ export default function Document() {
                     href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Mynerve&display=swap"
                     rel="stylesheet"
                 />
+                <link
+                    rel="icon"
+                    type="image/svg+xml"
+                    href="../assets/images/icon.ico"
+                ></link>
             </Head>
             <body>
                 <Main />

@@ -1,3 +1,7 @@
+```
+
+```
+
 NannyOggsCookbook
 |-.eslintrc.json
 |-.git
@@ -10,6 +14,7 @@ NannyOggsCookbook
 | | |-icon.ico
 | | |-icon.jpg
 |-components
+| |-App.tsx
 | |-BookHeader.tsx
 | |-RecipeBook.tsx
 | |-RecipeCard.tsx
@@ -17,13 +22,12 @@ NannyOggsCookbook
 | |-recipes.json
 |-index.html
 |-next-env.d.ts
-|-next.config.mjs
+|-next.config.cjs
 |-pages
 | |-api
 | | |-data
 | | | |-recipes.json
 | | |-recipes.js
-| |-App.tsx
 | |-index.js
 | |-\_app.tsx
 | |-\_document.tsx
