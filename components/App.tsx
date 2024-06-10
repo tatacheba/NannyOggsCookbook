@@ -1,8 +1,9 @@
-//App.tsx
+//components\App.tsx
 import React, { useEffect, useState } from "react";
 import recipesData from "../pages/api/data/recipes.json";
 import BookHeader from "./BookHeader";
 import RecipeBook from "./RecipeBook";
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 import {
     Recipe as RecipeType,
     Ingredient as IngredientType,
@@ -31,9 +32,7 @@ const App: React.FC = () => {
     useEffect(() => {
         async function fetchRecipes() {
             try {
-                const response = await fetch(
-                    "http://localhost:3000/api/recipes"
-                );
+                const response = await fetch(`${apiUrl}/api/recipes`);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }

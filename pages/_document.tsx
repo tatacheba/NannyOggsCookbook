@@ -12,7 +12,7 @@ export default function Document() {
                 <link
                     rel="icon"
                     type="image/svg+xml"
-                    href="../assets/images/icon.ico"
+                    href="../public/images/icon.ico"
                 ></link>
             </Head>
             <body>

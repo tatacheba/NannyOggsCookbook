@@ -1,4 +1,4 @@
-// RecipeCard.tsx
+// components\RecipeCard.tsx
 import React from "react";
 import { RecipeCardProps } from "../types/recipes";
 
