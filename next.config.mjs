@@ -1,36 +1,20 @@
-// /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//   output: 'export',
-// }
- 
-// module.exports = nextConfig
 // @ts-check
- 
-// @ts-check
- 
 /**
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  reactStrictMode: true,
-  output: 'export',
+    output: 'export',
     assetPrefix: './',
-  distDir: 'out',
-   images: {
-    unoptimized: true,
-  },
+    distDir: 'out',
+    publicPath: './',
+
+    images: {
+        unoptimized: false
+    },
+    //  webpack(config, options) {         config.module.rules.push({
+    // test: /\.css$/,             use: [                 options.rules.css,
+    //         'postcss-loader', // Add postcss-loader to the loader chain
+    //   ],         });         return config;     }
 }
- 
-export default nextConfig
 
-// const path = require('path');
-
-// module.exports = {
-//   images: {
-//     domains: ['yourdomain.com'],
-//   },
-//   webpack(config) {
-//     config.resolve.alias['@'] = path.resolve(__dirname);
-//     return config;
-//   },
-// };
+export default nextConfig;
