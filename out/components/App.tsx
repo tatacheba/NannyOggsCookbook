@@ -1,6 +1,6 @@
 //components\App.tsx
 import React, { useEffect, useState } from "react";
-import recipesData from "../pages/api/data/recipes.json";
+import recipesData from "../data/recipes.json";
 import BookHeader from "./BookHeader";
 import RecipeBook from "./RecipeBook";
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;

@@ -1,6 +1,6 @@
 // pages/_app.tsx
 import type { AppProps } from "next/app";
-import "../styles/App.css";
+import "../public/styles/App.css";
 import Head from "next/head";
 
 /**

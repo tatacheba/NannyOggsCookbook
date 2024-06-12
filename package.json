@@ -3,12 +3,12 @@
     "version": "0.0.1",
     "scripts": {
         "dev": "next dev",
-        "build": "next build ",
+        "build": "next build",
         "start": "next start",
         "lint": "next lint",
         "deploy": "gh-pages -d out",
         "local": "cpy .env.local .env && next dev",
-        "vercel": "  next build && cpy .env.vercel out/",
+        "vercel": "   cpy .env.vercel out/",
         "gh-pages": "cpy .env.gh-pages out/ && cpy .nojekyll out/ && gh-pages -d out -t true"
     },
     "dependencies": {

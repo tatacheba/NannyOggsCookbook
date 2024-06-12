@@ -3,19 +3,24 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
+    reactStrictMode: true,
     output: 'export',
-    assetPrefix: './',
-    distDir: 'out',
-    publicPath: './',
-  images: {
-    loader: 'akamai',
-    path: '',
-  },
-
-    //  webpack(config, options) {         config.module.rules.push({
-    // test: /\.css$/,             use: [                 options.rules.css,
-    //         'postcss-loader', // Add postcss-loader to the loader chain
-    //   ],         });         return config;     }
+  assetPrefix: './',
+    distDir:'build',
+   images: {
+    domains: ['example.com'],
+ 
+  // images: {
+  //   remotePatterns: [
+  //     {
+  //       protocol: 'https',
+  //       hostname: 'tatacheba.github.io/NannyOggsCookbook',
+  //       port: '',
+  //       pathname: '/out/**',
+  //     },
+  //   ],
+     // },
+   },
 }
 
 export default nextConfig;

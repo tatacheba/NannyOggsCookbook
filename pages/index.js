@@ -1,5 +1,5 @@
 //pages\index.js
-import App from "../components/App";
+import App from "../public/components/App";
 
 export default function Home() {
     return <App />;
