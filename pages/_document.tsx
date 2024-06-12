@@ -1,24 +1,23 @@
 // pages/_document.tsx
-import { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
-export default function Document() {
+export default class MyDocument extends Document {
+  render() {
     return (
-        <Html>
-            <Head>
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Mynerve&display=swap"
-                    rel="stylesheet"
-                />
-                <link
-                    rel="icon"
-                    type="image/svg+xml"
-                    href="../public/images/icon.jpg"
-                ></link>
-            </Head>
-            <body>
-                <Main />
-                <NextScript />
-            </body>
-        </Html>
+      <Html lang="en">
+        <Head>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Mynerve&display=swap"
+            rel="stylesheet"
+          />
+          <link rel="icon" href="/icon.ico" type="image/x-icon" />
+          {/* <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" /> */}
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
     );
+  }
 }
