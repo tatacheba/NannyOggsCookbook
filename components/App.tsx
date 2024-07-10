@@ -23,7 +23,7 @@ const App: React.FC = () => {
       })),
       instructions: recipe.instructions,
       notes: recipe.notes,
-    }))
+    })),
   );
 
   const [currentRecipe, setCurrentRecipe] = useState<RecipeType>(recipes[0]);

@@ -13,13 +13,13 @@ const RecipeBook: React.FC<RecipeBookProps> = ({
   const [currentIndex, setCurrentIndex] = useState<number>(
     currentRecipe
       ? recipes.findIndex((recipe) => recipe.title === currentRecipe.title)
-      : 0
+      : 0,
   );
 
   useEffect(() => {
     if (currentRecipe) {
       setCurrentIndex(
-        recipes.findIndex((recipe) => recipe.title === currentRecipe.title)
+        recipes.findIndex((recipe) => recipe.title === currentRecipe.title),
       );
     }
   }, [currentRecipe, recipes]);
