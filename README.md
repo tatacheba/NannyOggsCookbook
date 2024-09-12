@@ -1,46 +1,40 @@
 ```
 NannyOggsCookbook
-|-.eslintrc.cjs
+|-.editorconfig
+|-.eslintrc.json
 |-.git
 |-.gitignore
-|-index.html
-|-public
-| |-images
-| | |-background.jpg
-| | |-book.png
-| | |-button.png
-| | |-icon.ico
-| | |-icon.jpg
-|-README.md
-|-server
-| |-data
-| | |-recipes.json
-| |-node
-| |-server.js
-| |-server@1.0.0
-|-src
+|-.nojekyll
+|-components
 | |-App.tsx
-| |-assets
-| | |-App.css
-| | |-images
-| | | |-background.jpg
-| | | |-book.png
-| | | |-button.png
-| | | |-icon.ico
-| | | |-icon.jpg
-| |-components
-| | |-BookHeader.tsx
-| | |-RecipeBook.tsx
-| | |-RecipeCard.tsx
-| |-data
-| | |-recipes.json
-| |-main.tsx
-| |-types
-| | |-recipes.tsx
-| |-vite-env.d.ts
-|-svelte.config.js
+| |-BookHeader.tsx
+| |-RecipeBook.tsx
+| |-RecipeCard.tsx
+|-data
+| |-recipes.json
+|-images
+| |-icon.ico
+| |-icon.jpg
+|-next-env.d.ts
+|-next.config.mjs
+|-pages
+| |-api
+| | |-data
+| | | |-recipes.json
+| | |-recipes.js
+| |-index.js
+| |-_app.tsx
+| |-_document.tsx
+|-public
+| |-background.jpg
+| |-book.png
+| |-button.png
+|-README.md
+|-styles
+| |-App.css
 |-tsconfig.json
-|-tsconfig.node.json
-|-vite.config.ts
+|-types
+| |-recipes.tsx
+|-vercel.json
 
 ```

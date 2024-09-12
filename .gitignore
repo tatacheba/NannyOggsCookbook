@@ -8,7 +8,7 @@ dist/
 # .env.*
 # !.env.example
 .vercel
-.output
+# out/
 .history/
 vite.config.js.timestamp-*
 vite.c<onfig.ts.timestamp-*
@@ -17,3 +17,7 @@ src/
 server/*
 
 .vercel
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

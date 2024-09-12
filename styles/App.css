@@ -1,195 +1,187 @@
 :root {
-    --font-body: Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", "Mynerve",
-        Edu NSW ACT Foundation sans-serif;
-    --color-bg-0: rgb(202, 216, 228);
-    --color-bg-1: hsl(209, 36%, 86%);
-    --color-bg-2: hsl(224, 44%, 95%);
-    --color-theme-1: #ff3e00;
-    --color-theme-2: #4075a6;
-    --color-text: rgba(0, 0, 0, 0.7);
-    --column-width: 42rem;
-    --column-margin-top: 4rem;
-    font-family: var(--font-body);
-    color: var(--color-text);
+  --font-body: Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", "Mynerve",
+    Edu NSW ACT Foundation sans-serif;
+  --color-bg-0: rgb(202, 216, 228);
+  --color-bg-1: hsl(209, 36%, 86%);
+  --color-bg-2: hsl(224, 44%, 95%);
+  --color-theme-1: #ff3e00;
+  --color-theme-2: #4075a6;
+  --color-text: rgba(0, 0, 0, 0.7);
+  --column-width: 42rem;
+  --column-margin-top: 4rem;
+  font-family: var(--font-body);
+  color: var(--color-text);
 }
 
 body {
-    background: url("../public/images/background.jpg") no-repeat center center
-        fixed;
-    background-size: cover; /* Сохраняет пропорции изображения */
-    font-family: "Mynerve", fantasy;
-    color: #0c0500;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden; /* Скрыть прокрутку */
-    position: relative; /* Позиционирование для абсолютных элементов */
-    font-size: 14px;
+  font-family: "Mynerve", fantasy;
+  color: #0c0500;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; /* Скрыть прокрутку */
+  position: relative; /* Позиционирование для абсолютных элементов */
 }
 
 h1 {
-    font-family: "Edu NSW ACT Foundation", cursive;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-    text-align: center; /* Центрируем текст */
-    color: #8b4513;
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center; /* Центрируем текст */
+  color: #8b4513;
 }
 
 h2,
 h3 {
-    line-height: 1;
-    color: #220f02;
-    margin-bottom: 1em;
-    padding: 0.5em 0;
+  line-height: 1;
+  color: #220f02;
+  margin-bottom: 4px;
+  padding: 1px;
 }
 h2 {
-    font-size: 1.5em;
+  font-size: 22px;
 }
 h3 {
-    margin-top: 0.54em;
-    font-size: 0.7em;
-    text-align: flex-start;
+  margin-top: 8px;
+  font-size: 18px;
+  text-align: flex-start;
 }
 
 p {
-    /* font-size: 1em; */
-    line-height: 1;
-    padding: 0;
-    margin: 0;
-    text-align: flex-start;
-    white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  text-align: flex-start;
+  white-space: pre-wrap;
 }
 
 .book-header {
-    position: absolute;
-    top: 0.2em; /* Расположить заголовок сверху */
-    left: 0.2em;
-    z-index: 10; /* Поверх книги */
-    padding: 10px 20px; /* Отступы */
-    border-radius: 10px; /* Скругленные углы */
+  position: absolute;
+  top: 10px; /* Расположить заголовок сверху */
+  left: 10px;
+  z-index: 10; /* Поверх книги */
+  padding: 10px 20px; /* Отступы */
+  border-radius: 10px; /* Скругленные углы */
 }
 .book-header h2 {
-    cursor: pointer;
-    position: relative;
-    padding-left: 1.3em;
-    font-size: 1.1em;
-    padding: 0.3em 0.8em;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
 }
 
 .book-header h2:hover {
-    color: #8b4513;
+  color: #8b4513;
 }
 .book-header h2.selected {
-    color: #8b4513;
+  color: #8b4513;
 }
 .book-header h2::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 10px;
-    height: 10px;
-    background: #8b4513;
-    border-radius: 50%;
-    transform: translateY(-50%);
-    opacity: 0; /* Начальное состояние невидимым */
-    transition: opacity 0.3s;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  background: #8b4513;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  opacity: 0; /* Начальное состояние невидимым */
+  transition: opacity 0.3s;
 }
 
 .book-header h2.selected::before {
-    opacity: 1; /* Отображать индикатор для выбранного рецепта */
+  opacity: 1; /* Отображать индикатор для выбранного рецепта */
 }
 
 .book {
-    background: url("../public/images/book.png") no-repeat center center;
-    background-size: cover; /* Сохраняет пропорции изображения */
-    width: 1024px;
-    height: 730px;
-    padding: 20px;
-    display: flex;
-    position: relative;
-    box-sizing: border-box;
+  width: 1024px;
+  height: 730px;
+  padding: 20px;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
 }
 .button-left,
 .button-right {
-    position: absolute;
-    top: 50%;
-    height: 100px;
-    width: 100px;
-    background: url("../public/images/button.png");
-    background-size: contain;
-    border: none;
-    padding: 10px 20px;
-    font-size: 40px;
-    cursor: pointer;
-    transition: transform 0.3s;
-    z-index: 10;
-    overflow: hidden;
+  position: absolute;
+  top: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: transparent;
+  background-size: contain;
+  border: none;
+  padding: 10px 20px;
+  font-size: 40px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  z-index: 10;
+  overflow: hidden;
 }
 
 .button-left {
-    left: -100px;
+  left: -100px;
 }
 
 .button-right {
-    right: -100px;
-    transform: rotateY(-180deg);
+  right: -100px;
+  transform: rotateY(-180deg);
 }
 .recipe-page {
-    position: relative;
-    width: inherit;
-    height: inherit;
+  position: relative;
+  width: inherit;
+  height: inherit;
 }
 .left-page,
 .right-page {
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    box-sizing: border-box;
-    transition: transform 0.5s ease;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+  transition: transform 0.5s ease;
 
-    white-space: pre-wrap;
-    text-overflow: ellipsis; /* Добавлено для обрезки текста троеточиями */
+  white-space: pre-wrap;
+  text-overflow: ellipsis; /* Добавлено для обрезки текста троеточиями */
 }
 .left-page {
-    /* border: 2px solid red; */
-    top: 100px;
-    height: 370px;
-    width: 250px;
-    left: 200px;
+  /* border: 2px solid red; */
+  top: 100px;
+  height: 370px;
+  width: 250px;
+  left: 200px;
 }
 .right-page {
-    top: 120px;
-    height: 460px;
-    width: 330px;
-    right: 140px;
+  top: 120px;
+  height: 460px;
+  width: 330px;
+  right: 140px;
 }
 ul,
 ol {
-    margin: 0;
-    padding-left: 10px;
-    overflow: hidden; /* Добавлено для скрытия переполнения */
-    white-space: pre-wrap;
-    text-overflow: ellipsis; /* Добавлено для обрезки текста троеточиями */
+  margin: 0;
+  padding-left: 10px;
+  overflow: hidden; /* Добавлено для скрытия переполнения */
+  white-space: pre-wrap;
+  text-overflow: ellipsis; /* Добавлено для обрезки текста троеточиями */
 }
 
 ul {
-    list-style-type: disc;
+  list-style-type: disc;
 }
 
 ol {
-    list-style-type: decimal;
+  list-style-type: decimal;
 }
 
 /* Для li элементов */
 li {
-    overflow: hidden; /* Скрывает переполнение */
-    text-overflow: ellipsis; /* Добавляет троеточие */
-    white-space: pre-wrap;
+  overflow: hidden; /* Скрывает переполнение */
+  text-overflow: ellipsis; /* Добавляет троеточие */
+  white-space: pre-wrap;
 }
