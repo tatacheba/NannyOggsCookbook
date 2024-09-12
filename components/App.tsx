@@ -28,16 +28,36 @@ const App: React.FC = () => {
 
   const [currentRecipe, setCurrentRecipe] = useState<RecipeType>(recipes[0]);
 
+  // useEffect(() => {
+  //   async function fetchRecipes() {
+  //     try {
+  //       const response = await fetch(`${apiUrl}/recipes`);
+  //       if (!response.ok) {
+  //         throw new Error(`HTTP error! status: ${response.status}`);
+  //       }
+  //       const data = await response.json();
+  //       setRecipes(data.recipes);
+  //       setCurrentRecipe(data.recipes[0]);
+  //     } catch (error) {
+  //       console.error("Failed to fetch recipes:", error);
+  //     }
+  //   }
+
+  //   fetchRecipes();
+  // }, []);
+
   useEffect(() => {
     async function fetchRecipes() {
       try {
-        const response = await fetch(`${apiUrl}/recipes`);
+        const response = await fetch(
+          `${process.env.NEXT_PUBLIC_API_URL}/recipes`,
+        );
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
-        setRecipes(data.recipes);
-        setCurrentRecipe(data.recipes[0]);
+        setRecipes(data);
+        setCurrentRecipe(data[0]);
       } catch (error) {
         console.error("Failed to fetch recipes:", error);
       }
@@ -45,6 +65,7 @@ const App: React.FC = () => {
 
     fetchRecipes();
   }, []);
+
   const selectRecipe = (recipe: RecipeType) => {
     setCurrentRecipe(recipe);
   };

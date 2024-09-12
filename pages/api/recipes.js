@@ -1,57 +1,55 @@
-// pages/api/recipes.js
-import { readFileSync } from "fs";
-import { join } from "path";
+const { sql } = require("@vercel/postgres");
+const fs = require("fs");
+const path = require("path");
 
-export default function handler(req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "*"); // Разрешить запросы с любого домена
-  const filePath = join(process.cwd(), "data/recipes.json");
-  const fileContents = readFileSync(filePath, "utf8");
-  const recipesData = JSON.parse(fileContents);
+async function loadInitialData() {
+  const filePath = path.join(process.cwd(), "data", "recipes.json");
+  const fileContents = fs.readFileSync(filePath, "utf8");
+  const recipes = JSON.parse(fileContents).recipes;
 
-  if (req.method === "GET") {
-    const { id } = req.query;
-    if (id) {
-      const recipeId = parseInt(id, 10);
-      const recipe = recipesData.recipes.find((r) => r.id === recipeId);
-      if (recipe) {
-        res.status(200).json(recipe);
-      } else {
-        res.status(404).send("Recipe not found");
-      }
-    } else {
-      res.status(200).json(recipesData);
-    }
-  } else if (req.method === "POST") {
-    const newRecipe = req.body;
-    newRecipe.id = recipesData.recipes.length;
-    recipesData.recipes.push(newRecipe);
-    res.status(201).json(newRecipe);
-  } else if (req.method === "PUT") {
-    const recipeId = parseInt(req.query.id, 10);
-    const updatedRecipe = req.body;
-    const recipeIndex = recipesData.recipes.findIndex((r) => r.id === recipeId);
-
-    if (recipeIndex >= 0) {
-      recipesData.recipes[recipeIndex] = {
-        ...recipesData.recipes[recipeIndex],
-        ...updatedRecipe,
-      };
-      res.status(200).json(recipesData.recipes[recipeIndex]);
-    } else {
-      res.status(404).send("Recipe not found");
-    }
-  } else if (req.method === "DELETE") {
-    const recipeId = parseInt(req.query.id, 10);
-    const recipeIndex = recipesData.recipes.findIndex((r) => r.id === recipeId);
-
-    if (recipeIndex >= 0) {
-      const deletedRecipe = recipesData.recipes.splice(recipeIndex, 1);
-      res.status(200).json(deletedRecipe);
-    } else {
-      res.status(404).send("Recipe not found");
-    }
-  } else {
-    res.setHeader("Allow", ["GET", "POST", "PUT", "DELETE"]);
-    res.status(405).end(`Method ${req.method} Not Allowed`);
+  for (const recipe of recipes) {
+    const { title, ingredients, instructions } = recipe;
+    await sql`
+      INSERT INTO Recipes (title, ingredients, instructions)
+      VALUES (${title}, ${JSON.stringify(ingredients)}, ${instructions})
+      ON CONFLICT (title) DO NOTHING;
+    `;
   }
 }
+
+module.exports = async (req, res) => {
+  try {
+    // Создание таблицы, если она не существует
+    await sql`CREATE TABLE IF NOT EXISTS Recipes (
+      id SERIAL PRIMARY KEY,
+      title VARCHAR(255) NOT NULL,
+      ingredients TEXT NOT NULL,
+      instructions TEXT NOT NULL
+    );`;
+
+    // Загрузка начальных данных
+    await loadInitialData();
+
+    if (req.method === "GET") {
+      const result = await sql`SELECT * FROM Recipes`;
+      return res.status(200).json(result.rows);
+    } else if (req.method === "POST") {
+      const { title, ingredients, instructions } = req.body;
+      if (!title || !ingredients || !instructions) {
+        return res.status(400).json({ error: "Missing required fields" });
+      }
+      const result = await sql`
+        INSERT INTO Recipes (title, ingredients, instructions)
+        VALUES (${title}, ${ingredients}, ${instructions})
+        RETURNING *;
+      `;
+      return res.status(201).json(result.rows[0]);
+    } else {
+      res.setHeader("Allow", ["GET", "POST"]);
+      return res.status(405).end(`Method ${req.method} Not Allowed`);
+    }
+  } catch (error) {
+    console.error("API error:", error);
+    return res.status(500).json({ error: error.message });
+  }
+};
