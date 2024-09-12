@@ -27,6 +27,7 @@ body {
     height: 100vh;
     overflow: hidden; /* Скрыть прокрутку */
     position: relative; /* Позиционирование для абсолютных элементов */
+    font-size: 14px;
 }
 
 h1 {
@@ -42,20 +43,20 @@ h2,
 h3 {
     line-height: 1;
     color: #220f02;
-    margin-bottom: 4px;
-    padding: 1px;
+    margin-bottom: 1em;
+    padding: 0.5em 0;
 }
 h2 {
-    font-size: 22px;
+    font-size: 1.5em;
 }
 h3 {
-    margin-top: 8px;
-    font-size: 18px;
+    margin-top: 0.54em;
+    font-size: 0.7em;
     text-align: flex-start;
 }
 
 p {
-    font-size: 14px;
+    /* font-size: 1em; */
     line-height: 1;
     padding: 0;
     margin: 0;
@@ -65,8 +66,8 @@ p {
 
 .book-header {
     position: absolute;
-    top: 10px; /* Расположить заголовок сверху */
-    left: 10px;
+    top: 0.2em; /* Расположить заголовок сверху */
+    left: 0.2em;
     z-index: 10; /* Поверх книги */
     padding: 10px 20px; /* Отступы */
     border-radius: 10px; /* Скругленные углы */
@@ -74,7 +75,9 @@ p {
 .book-header h2 {
     cursor: pointer;
     position: relative;
-    padding-left: 25px;
+    padding-left: 1.3em;
+    font-size: 1.1em;
+    padding: 0.3em 0.8em;
 }
 
 .book-header h2:hover {

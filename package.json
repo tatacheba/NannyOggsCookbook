@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "local": "cpy .evn.local .env && next dev",
     "start": "next start",
     "lint": "next lint",
     "deploy": "gh-pages -d dist"
@@ -29,6 +30,6 @@
     "typescript": "^5.2.2",
     "vite": "^5.2.12"
   },
-  "type": "module",
+
   "homepage": "https://<your-github-username>.github.io/NannyOggsCookbook"
 }
