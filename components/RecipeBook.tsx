@@ -40,12 +40,7 @@ const RecipeBook: React.FC<RecipeBookProps> = ({
     <div
       className="book"
       style={{
-        // use the src property of the image object
         backgroundImage: `url(${bookImage.src})`,
-        // other styles background: url("../images/background.jpg") no-repeat center center fixed;
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
       }}
     >
       <button

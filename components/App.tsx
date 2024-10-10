@@ -28,24 +28,6 @@ const App: React.FC = () => {
 
   const [currentRecipe, setCurrentRecipe] = useState<RecipeType>(recipes[0]);
 
-  // useEffect(() => {
-  //   async function fetchRecipes() {
-  //     try {
-  //       const response = await fetch(`${apiUrl}/recipes`);
-  //       if (!response.ok) {
-  //         throw new Error(`HTTP error! status: ${response.status}`);
-  //       }
-  //       const data = await response.json();
-  //       setRecipes(data.recipes);
-  //       setCurrentRecipe(data.recipes[0]);
-  //     } catch (error) {
-  //       console.error("Failed to fetch recipes:", error);
-  //     }
-  //   }
-
-  //   fetchRecipes();
-  // }, []);
-
   useEffect(() => {
     async function fetchRecipes() {
       try {
@@ -73,16 +55,7 @@ const App: React.FC = () => {
     <div
       className="app"
       style={{
-        // use the src property of the image object
         backgroundImage: `url(${backgroundImage.src})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        width: "100vw",
-        height: "100vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
       }}
     >
       <BookHeader

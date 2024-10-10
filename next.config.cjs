@@ -1,4 +1,4 @@
-// @ts-check
+// next.config.cjs
 /**
  * @type {import('next').NextConfig}
  */
