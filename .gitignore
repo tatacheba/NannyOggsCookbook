@@ -1,0 +1,23 @@
+.DS_Store
+node_modules
+build/
+.svelte-kit/
+dist/
+/package
+# .env
+# .env.*
+# !.env.example
+.vercel
+# out/
+.history/
+vite.config.js.timestamp-*
+vite.c<onfig.ts.timestamp-*
+.next/
+src/
+server/*
+
+.vercel
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
