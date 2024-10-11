@@ -4,10 +4,10 @@ build/
 .svelte-kit/
 dist/
 /package
-.env
-# !.env.example
+# .env.local
+.env.vercel
 .vercel
-# out/
+.vscode/
 .history/
 vite.config.js.timestamp-*
 vite.c<onfig.ts.timestamp-*
