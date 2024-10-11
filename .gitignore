@@ -12,7 +12,7 @@ dist/
 vite.config.js.timestamp-*
 vite.c<onfig.ts.timestamp-*
 .next/
-src/
+out/
 server/*
 
 .vercel

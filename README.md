@@ -1,10 +1,12 @@
 ```
-NannyOggsCookbook
+nannyoggscookbook
 |-.editorconfig
 |-.eslintrc.json
-|-.git
 |-.gitignore
 |-.nojekyll
+|-.prettierrc
+|-.vscode
+| |-settings.json
 |-components
 | |-App.tsx
 | |-BookHeader.tsx
@@ -12,26 +14,31 @@ NannyOggsCookbook
 | |-RecipeCard.tsx
 |-data
 | |-recipes.json
-|-images
-| |-icon.ico
-| |-icon.jpg
 |-next-env.d.ts
-|-next.config.mjs
+|-next.config.cjs
+|-out
+| |-.nojekyll
 |-pages
 | |-api
-| | |-data
-| | | |-recipes.json
 | | |-recipes.js
+| |-favicon.ico
 | |-index.js
 | |-_app.tsx
 | |-_document.tsx
+|-playwright.config.ts
 |-public
 | |-background.jpg
 | |-book.png
 | |-button.png
+| |-icon.ico
+| |-icon.jpg
 |-README.md
 |-styles
 | |-App.css
+|-tests
+| |-example.spec.ts
+|-tests-examples
+| |-demo-todo-app.spec.ts
 |-tsconfig.json
 |-types
 | |-recipes.tsx
