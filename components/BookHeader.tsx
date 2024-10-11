@@ -1,6 +1,7 @@
 // components/BookHeader.tsx
 import React from "react";
 import { Recipe, RecipeBookProps } from "../types/recipes";
+import Ingredients from "./Ingredients";
 
 const BookHeader: React.FC<RecipeBookProps> = ({
   recipes,
@@ -27,6 +28,11 @@ const BookHeader: React.FC<RecipeBookProps> = ({
           {recipe.title}
         </h2>
       ))}
+      {/* <Ingredients
+        recipes={recipes}
+        selectRecipe={selectRecipe}
+        currentRecipe={currentRecipe}
+      /> */}
     </div>
   );
 };

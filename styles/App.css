@@ -143,6 +143,26 @@ li {
 .book-header h2.selected::before {
   opacity: 1;
 }
+.ingredients {
+  display: flex; /* Включаем Flexbox для расположения в строку */
+  flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+  justify-content: flex-start; /* Выравниваем по левому краю */
+  gap: 0.3rem; /* Промежутки между элементами */
+  max-width: min-content; /* Ограничиваем ширину до родительского блока */
+  overflow: hidden; /* Прячем элементы, которые выходят за пределы */
+  box-sizing: border-box; /* Учитываем padding и border в общей ширине */
+  position: relative; /* Относительное позиционирование внутри .book-header */
+}
+
+.ingredients h3 {
+  flex: 1 1 calc(33.33% - 0.3rem); /* Элементы занимают треть ширины с учетом отступов */
+  text-align: center; /* Выравниваем текст по центру */
+  padding: 0.3rem; /* Внутренние отступы */
+  background-color: #f0f0f0; /* Легкий фон для разделения */
+  border-radius: 0.3rem; /* Закругляем углы */
+  min-width: 5rem; /* Минимальная ширина элемента */
+  box-sizing: border-box; /* Учитываем padding и border */
+}
 
 .button-left,
 .button-right {

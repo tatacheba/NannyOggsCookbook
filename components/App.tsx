@@ -9,6 +9,7 @@ import {
   Recipe as RecipeType,
   Ingredient as IngredientType,
 } from "../types/recipes";
+import Ingredients from "./Ingredients";
 
 const App: React.FC = () => {
   const [recipes, setRecipes] = useState<RecipeType[]>(
@@ -31,9 +32,7 @@ const App: React.FC = () => {
   useEffect(() => {
     async function fetchRecipes() {
       try {
-        const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}/recipes`,
-        );
+        const response = await fetch(`${apiUrl}/recipes`);
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }

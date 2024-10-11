@@ -20,22 +20,22 @@
         {
           "name": "radishes",
           "src": "",
-          "quantity": "3-4"
+          "quantity": "4"
         },
         {
           "name": "spring onions",
           "src": "",
-          "quantity": "2-3"
+          "quantity": "3"
         },
         {
           "name": "watercress",
           "src": "",
-          "quantity": "a few sprigs"
+          "quantity": "5", "unit": "sprigs"
         },
         {
           "name": "light soy sauce",
           "src": "",
-          "quantity": "an eggcup full"
+          "quantity": "1", "unit": "eggcup"
         },
         {
           "name": "mustard",
@@ -102,13 +102,14 @@
         },
         {
           "name": "salt",
-          "src": "",
-          "quantity": "pinch"
+          "src": "",   "quantity": "1",
+          "unit": "pinch"
         },
         {
           "name": "pepper",
           "src": "",
-          "quantity": "pinch"
+          "quantity": "1",
+          "unit": "pinch"
         },
         {
           "name": "lemon juice",
@@ -173,12 +174,14 @@
         {
           "name": "salt",
           "src": "",
-          "quantity": "to taste"
+         "quantity": "1",
+          "unit": "pinch"
         },
         {
           "name": "pepper",
           "src": "",
-          "quantity": "to taste"
+       "quantity": "1",
+          "unit": "pinch"
         }
       ],
       "instructions": "PREHEAT THE OVEN to 200°C/Gas 6. Prepare the celery by carefully removing the inner stalks, any leaves, mud, etc., to form a hollow. Mix together all the remaining ingredients except the egg, and check seasoning. Bind together with the egg. Take a large piece of lightly oiled cooking foil and place it on a baking tray. Place the celery on the foil and stuff it with the mixture. Tie with string around the loose ends to prevent the stuffing falling out, wrap in the foil, and bake in the oven for 1¼–2 hours until celery is tender. To serve, carefully unwrap and place on an oval serving platter with two judiciously placed baked potatoes, mayhap. Carve at the table.",
@@ -222,7 +225,7 @@
         {
           "name": "baby octopus tentacles, cleaned",
           "src": "",
-          "quantity": "6-10"
+          "quantity": "8"
         },
         {
           "name": "tin chopped tomatoes",
@@ -239,7 +242,7 @@
         {
           "name": "garlic, crushed",
           "src": "",
-          "quantity": "2-3",
+          "quantity": "3",
           "unit": "cloves"
         },
         {
@@ -275,7 +278,8 @@
         {
           "name": "gravy browning/green food dye (optional)",
           "src": "",
-          "quantity": "a few drops"
+           "quantity": "100",
+          "unit": "drops"
         },
         {
           "name": "egg, beaten",
@@ -285,12 +289,14 @@
         {
           "name": "salt",
           "src": "",
-          "quantity": "to taste"
+        "quantity": "1",
+          "unit": "pinch"
         },
         {
           "name": "pepper",
           "src": "",
-          "quantity": "to taste"
+        "quantity": "1",
+          "unit": "pinch"
         }
       ],
       "instructions": "HEAT THE FISH stock in a large pan. Roughly chop the salmon and cod and drop into the stock. Simmer on a gentle heat until the fish is nearly cooked. Then remove from the heat and stir until the fish chunks separate and break down. Return to the heat and add the mussels, crab meat and tentacles. Bring to a simmer. Add the tomatoes and wine and return to a low heat. Add the herbs, garlic and seasonings, the vermicelli and shrimps, and simmer until the pasta cooks. Add browning/food dye if required, and check seasoning. Finally, add the egg and gently stir until cooked. Then quickly bring the mixture to the boil for a few seconds and serve.",
@@ -344,7 +350,7 @@
         {
           "name": "ground turmeric",
           "src": "",
-          "quantity": "½",
+          "quantity": "0.5",
           "unit": "teaspoon"
         },
         {
@@ -398,7 +404,8 @@
         {
           "name": "tomato purée to thicken, if needed",
           "src": "",
-          "quantity": "as needed"
+    "quantity": "1",
+          "unit": "pinch"
         },
         {
           "name": "brown mustard seeds",
@@ -409,12 +416,14 @@
         {
           "name": "salt",
           "src": "",
-          "quantity": "to taste"
+    "quantity": "1",
+          "unit": "pinch"
         },
         {
           "name": "black pepper",
           "src": "",
-          "quantity": "to taste"
+       "quantity": "1",
+          "unit": "pinch"
         }
       ],
       "instructions": "PREHEAT THE OVEN to 180°C/Gas 4. Heat the oil in a large frying pan. Add the onion, garlic, broccoli, peppers and cook until the onion starts to soften. Then add the part-cooked swede, the peas and raisins and cook gently for a further 5 minutes. Add the spices (but not the mustard seeds), the coconut milk and about half the vegetable stock. Cook for a further 10 minutes or so, adding extra stock if the mixture needs it. If it seems too runny, add a little tomato purée to thicken. Transfer the mixture to a casserole dish, season, sprinkle with the mustard seeds, cover and cook in the oven for about 45 minutes. Serve with rice or nan bread. Run away.",
@@ -430,7 +439,7 @@
           "name": "butter",
           "src": "",
           "quantity": "1",
-          "unit": "lump (about the size of an egg)"
+          "unit": "lump"
         },
         {
           "name": "plain flour",
@@ -471,7 +480,7 @@
         {
           "name": "salt and black pepper",
           "src": "",
-          "quantity": "",
+    "quantity": "1",
           "unit": "to taste"
         },
         {
@@ -500,13 +509,13 @@
           "name": "pig's trotters",
           "src": "",
           "quantity": "2",
-          "unit": ""
+          "unit": "pieces"
         },
         {
           "name": "bouquet garni",
           "src": "",
           "quantity": "1",
-          "unit": ""
+          "unit": "pieces"
         },
         {
           "name": "mustard seeds",
@@ -515,22 +524,22 @@
           "unit": "tablespoon"
         },
         {
-          "name": "butter or olive oil (or garlic butter/garlic olive oil)",
+          "name": "oil",
           "src": "",
-          "quantity": "",
-          "unit": ""
+          "quantity": "1",
+          "unit": "to taste"
         },
         {
           "name": "pain rustique or other crusty rolls",
           "src": "",
-          "quantity": "",
-          "unit": ""
+          "quantity": "1",
+          "unit": "to taste"
         },
         {
           "name": "fresh cress or thinly sliced cucumber",
           "src": "",
-          "quantity": "",
-          "unit": ""
+          "quantity": "1",
+          "unit": "to taste"
         }
       ],
       "instructions": "Place the trotters in a pan with the bouquet garni and the mustard seeds. Cover with water and bring to the boil. Simmer until the meat is tender (35–45 minutes, depending on size). Remove from the pan and shake off any excess water. To make the sandwiches, remove the meat from the bone, brush lightly with the butter or oil and grill until golden brown and crispy. Arrange neatly in a split pain rustique with a little fresh cress or wafer-thin sliced cucumber.",
@@ -546,25 +555,25 @@
           "name": "white bread",
           "src": "",
           "quantity": "4",
-          "unit": "slices (crusts cut off)"
+          "unit": "slices"
         },
         {
           "name": "black treacle",
           "src": "",
           "quantity": "1",
-          "unit": "tablespoon (mixed with 2 tablespoons golden syrup)"
+          "unit": "tablespoon"
         },
         {
           "name": "golden syrup",
           "src": "",
           "quantity": "2",
-          "unit": "tablespoons (mixed with 1 tablespoon black treacle)"
+          "unit": "tablespoons"
         },
         {
           "name": "stewed prunes",
           "src": "",
           "quantity": "20",
-          "unit": "(stoned)"
+          "unit": "stoned"
         },
         {
           "name": "rice pudding",
@@ -585,7 +594,7 @@
         {
           "name": "gelatine (or veggie equivalent)",
           "src": "",
-          "quantity": "2–3",
+          "quantity": "3",
           "unit": "sachets"
         },
         {
@@ -610,12 +619,12 @@
           "name": "caster sugar",
           "src": "",
           "quantity": "2",
-          "unit": "tablespoons (or to taste)"
+          "unit": "tablespoons"
         },
         {
           "name": "strawberry ice cream",
           "src": "",
-          "quantity": "",
+          "quantity": "1",
           "unit": "for serving"
         }
       ],
@@ -630,25 +639,25 @@
           "name": "clear honey",
           "src": "",
           "quantity": "1",
-          "unit": "small jar (approx. 113g)"
+          "unit": "small jar"
         },
         {
           "name": "clean rose petals",
           "src": "",
-          "quantity": "3–4",
+          "quantity": "4",
           "unit": "finely chopped"
         },
         {
           "name": "vanilla pod or vanilla essence",
           "src": "",
-          "quantity": "1 pod or 3",
+          "quantity": "3",
           "unit": "drops"
         },
         {
           "name": "gold leaf",
           "src": "",
-          "quantity": "fingernail-sized piece",
-          "unit": "(optional, for decoration)"
+          "quantity": "1",
+          "unit": "pieces"
         }
       ],
       "instructions": "Place the unopened jar of honey in a bowl of hot water for a couple of minutes to warm slightly. Remove and dry the jar. Open it and carefully stir in the remaining ingredients. Leave for at least a couple of hours for the flavours to infuse, and always shake the jar well before use."
