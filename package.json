@@ -2,9 +2,8 @@
   "name": "nannyoggscookbook",
   "version": "0.0.1",
   "scripts": {
-    "dev": "next dev",
+    "dev": "cpy .env.local .env && next dev",
     "build": "next build",
-    "local": "cpy .env.local .env && next dev",
     "prettier": "prettier -w ."
   },
   "dependencies": {
@@ -33,5 +32,5 @@
     "typescript": "^5.2.2"
   },
   "type": "module",
-  "homepage": "https://tatacheba.github.io/NannyOggsCookbook"
+  "homepage": "https://nanny-oggs-cookbook.vercel.app/"
 }
